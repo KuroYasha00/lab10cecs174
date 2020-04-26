@@ -1,6 +1,6 @@
 import static java.lang.Math.random();
 public class Dice{
-  private int topFace;//declaring one int var called topFace
+  public int topFace;//declaring one int var called topFace
   
   public Dice(){//constructor will assign a value to topFace and then return it
     RollDice();
