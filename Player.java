@@ -17,7 +17,6 @@ public class Player{
   public int Lose(){
     int minus = 50;
     money = money - minus;
-    return money;
   }
   public int GetMoney(){
     return money;
@@ -28,6 +27,5 @@ public class Player{
   public int Win(){
     int plus = 50;
     money = money + plus;
-    return money
   }
 }
