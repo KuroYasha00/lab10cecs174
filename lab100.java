@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class lab100{
     static Scanner S= new Scanner(System.in);
 
