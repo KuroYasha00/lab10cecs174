@@ -1,31 +1,32 @@
-
 public class Player{
-  public String name;
-  public int money;
-  public int Dice;
-  
-  public Player(String name, int money){
-    this.name = name;
-    this.money = money;
-    Roll();
-    
-  }
-  public void Roll(){
-    Dice.RollDice();
-    Dice = Dice.GetDice();
-  }
-  public int Lose(){
-    int minus = 50;
-    money = money - minus;
-  }
-  public int GetMoney(){
-    return money;
-  }
-  public String GetName(){
-    return name;
-  }
-  public int Win(){
-    int plus = 50;
-    money = money + plus;
-  }
+    public String name;
+    public int money;
+    Dice d1 = new Dice(1);
+
+    public Player(String name, int money){
+        this.name = name;
+        this.money = money;
+        Roll();
+
+    }
+    public int Roll(){
+        d1.RollDice();
+        return d1.GetDice();
+    }
+    public <bet> void Lose(int bet){
+        int minus;
+        minus = bet;
+        money = money - minus;
+    }
+    public int GetMoney(){
+        return money;
+    }
+    public String GetName(){
+        return name;
+    }
+    public <bet> void Win(int bet){
+        int plus;
+        plus = bet;
+        money = money + plus;
+    }
 }
